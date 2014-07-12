@@ -1,0 +1,660 @@
+@charset "utf-8";
+/*
+Theme Name: Leader
+Theme URI: http://agencialeader.com.br/
+Description: Desenvolvimento e consultoria.
+Version:1.0
+Author URI: http://agencialeader.com.br/
+*/
+html, body, div, span, applet, object, iframe, form, fieldset,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, var, small, strike, strong, sub, sup, tt, b, u, i,
+center, dl, dt, dd, ol, ul, li,  label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table{ border-collapse:separate; border-spacing:0;}
+a:link{color:#ff6633;text-decoration:none;outline:0;}
+a:visited{color:#ff6633;text-decoration:none;outline:0;}
+a:hover{color:#ff6633; text-decoration:none; outline:0;}
+a:active{color:#ccc;text-decoration:none;outline:0;}
+caption,th,td{font-weight:normal;text-align:left;}
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+small{font-size:0.625em;}
+big{font-size:1.0em;}
+img {max-width: 100%; max-height:100%;}
+img.alignright{float:right; margin:0 0 1em 1em}
+img.alignleft{float:left; margin:0 1em 1em 0}
+img.aligncenter{display: block; margin-left: auto; margin-right: auto}
+a img.alignright{float:right; margin:0 0 1em 1em}
+a img.alignleft{float:left; margin:0 1em 1em 0}
+a img.aligncenter{display: block; margin-left: auto; margin-right: auto}
+a img{border:0;}
+input{border:0.063em solid #33cc99;}
+p{line-height: 1.4em; padding-bottom:1.0em;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+*{margin:0; padding:0; outline:none; border:none; font-size: 1em; font-family: "open_sanslight"; color: #666;}
+body{height: 100%;}
+html{
+  overflow-x: hidden;
+  font-size: 1em; /* 1 */
+  -webkit-text-size-adjust: 1em; /* 2 */
+  -moz-text-size-adjust: 1em; /* 2 */
+  -ms-text-size-adjust: 1em;
+  -o-text-size-adjust: 1em;
+  text-size-adjust: 1em;
+}
+::-webkit-scrollbar{ width: 10px;}
+::-webkit-scrollbar-track-piece{ background-color: #EEE; border-left: 1px solid #CCC;}
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal{ background-color: #BAC0C4;}
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover{ background-color: #717171;}
+h1,h2,h3,h4,h5,h6 {line-height: 1.750em;                    }
+h1                {font-size: 2em;    margin: 0.67em 0;     }
+h2                {font-size: 1.5em;  margin: 0.83em 0;     }
+h3                {font-size: 1.17em; margin: 1em 0;        }
+h4                {font-size: 1em;    margin: 1.33em 0;     }
+h5                {font-size: 0.83em; margin: 1.67em 0;     }
+h6                {font-size: 0.75em; margin: 2.33em 0;     }
+/*==================================
+=            CSS Default            =
+==================================*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+  font-family: 'codropsicons';
+  src:url('../fonts/codropsicons/codropsicons.eot');
+  src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+    url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'ecoicons';
+    src: url("../fonts/ecoicons/ecoicons.eot");
+    src: url("../fonts/ecoicons/ecoicons.eot?#iefix") format("embedded-opentype"), url("../fonts/ecoicons/ecoicons.woff") format("woff"), url("../fonts/ecoicons/ecoicons.ttf") format("truetype"), url("../fonts/ecoicons/ecoicons.svg#ecoicons") format("svg");
+}
+@font-face {
+        font-family: "Heydings Common Icons";
+        src: url('fonts/64758301-heydings_icons.eot');
+        src: url('fonts/64758301-heydings_icons.eot?#iefix') format('embedded-opentype'),
+        url('fonts/64758301-heydings_icons.svg#Heydings Common Icons') format('svg'),
+        url('fonts/64758301-heydings_icons.woff') format('woff'),
+        url('fonts/64758301-heydings_icons.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Aller Light";
+        src: url('fonts/9826661-Aller_Lt.eot');
+        src: url('fonts/9826661-Aller_Lt.eot?#iefix') format('embedded-opentype'),
+        url('fonts/9826661-Aller_Lt.svg#Aller Light') format('svg'),
+        url('fonts/9826661-Aller_Lt.woff') format('woff'),
+        url('fonts/9826661-Aller_Lt.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/opensans-bold-webfont.eot');
+    src: url('fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-bold-webfont.woff') format('woff'),
+         url('fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans-light-webfont.eot');
+    src: url('fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-light-webfont.woff') format('woff'),
+         url('fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('fonts/opensans-semibolditalic-webfont.eot');
+    src: url('fonts/opensans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-semibolditalic-webfont.woff') format('woff'),
+         url('fonts/opensans-semibolditalic-webfont.ttf') format('truetype'),
+         url('fonts/opensans-semibolditalic-webfont.svg#open_sanssemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.clear {clear: both;}
+.center{max-width: 63.750em; width: 85%; margin: 0 auto;}
+.floatleft{ float: left;}
+.floatright{float: right;}
+.border1{ border: 1px solid #ccc;}
+.b1bottom{ border-bottom: 1px solid #E4E4E4;}
+.ptop20{padding-top:1.250em;}
+.ptop10{padding-top: 0.625em;}
+.p40-0{ padding: 40px 0;}
+.mr6percent{margin-right: 6%;}
+.margin-top20{margin-top:1.250em;}
+.margin-top50{margin-top: 3.125em;}
+.mbottom50{margin-bottom: 3.125em;}
+.margin-right20{margin-right:1.250em;}
+.margin-right50{margin-right: 3.125em;}
+.margin-left40{ margin-left: 2.500em;}
+.m0auto{margin: 0 auto;}
+.margin0{margin: 0;}
+.espaco-padrao{margin: 0.625em;}
+.radius10{ border-radius: 0.625em; -webkit-border-radius: 0.625em;- moz-border-radius: 0.625em; }
+.radius5{ border-radius: 0.313em; -webkit-border-radius: 0.313em; -moz-border-radius: 0.313em; }
+.botao{ background: #a81c3f; padding: 0.313em 0.625em; color: #FFF;}
+.botaocomprar{ background: #666; padding: 0.625em; color: #FFF; cursor: pointer;}
+.botaocomprar:hover{ background: #a81c3f;}
+.icon{  color: #a81c3f; float: left; }
+.cwhite{color: #FFF;}
+hr.bgf63{background: #f63; height: 2px; margin: 0 auto; width: 7%;}
+.text-bold{ font-family: 'open_sansbold';}
+.transicao{ 
+  -webkit-transition: all 800ms linear;
+  -moz-transition: all 800ms linear;
+  -ms-transition: all 800ms linear;
+  -o-transition: all 800ms linear;
+  transition: all 800ms linear;
+}
+*, *:after, *:before { border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+/*-----  End of CSS Default  ------*/
+.pont-logo{font: 150px "Vani"; margin:1.250em 0 0 0; color: #ff6633;}
+.header{ background: #333; min-height: 5.000em;  width: 100%;}
+.logo-geral{ padding: 1.300em 0 0 0;}
+.icon-logo-medium{ font: 3.750em "Heydings Common Icons"; color: #FFF; float: left;}
+.pont-logo-medium{font: 55px "Vani"; margin:1.250em 0 0 0; color: #FF6633;}
+.menu{ margin: 1.600em 0; float: right;}
+.menu li{ float: left;}
+.menu a{
+  border:none;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 2.75em 0.750em;
+  font-size: 1.150em;
+  color: #FFF;
+}
+.menu a:hover{
+  background: rgba(255,255,255,0.1);
+  -webkit-transition: all 800ms linear;
+  -moz-transition: all 800ms linear;
+  -ms-transition: all 800ms linear;
+  -o-transition: all 800ms linear;
+  transition: all 800ms linear;
+  border-radius: 0;
+  cursor: pointer;
+}
+.slide-home{
+  background: #ff6633 url(imagens/slide-home.jpg) no-repeat fixed top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  min-height: 250px;
+  padding: 150px 0;
+  width: 100%;
+  color: #FFF;
+}
+.slide-home h2{ font-family: 'open_sansbold'; }
+.slide-home p{ width:70%; }
+.slide-home a{ color: #FFF;}
+.btn-slide{ background: transparent; margin: 2em 0; color: #FFF; padding: 0.5em 3.5em;  border: 1px solid #FFF; }
+.btn-orange a{color: #FFF; text-align: center;  height: 2.688em;}
+.btn-orange{ font-size: 20px; padding: 0.625em; background: #ff6633; border-radius: 0.313em; border: 1px solid #ff6633; margin: 0.313em; color: #FFF; cursor: pointer; }
+.btn-home{width: 11%; margin: 0 auto;}
+.logo-medium{ font: 3.750em "Rockwell"; color: #FFF; float: left; margin: 0;}
+.consultoria { padding: 3em 0;}
+.consultoria h2{ color: #242424; margin:0; font: 4.375em "open_sansbold"; width: 100%;}
+.text-consul{ width: 40%;}
+.btn-consult-home a{color: #FFF;}
+.btn-consult-home{
+  border:2px solid #F63;
+  padding: 0.350em 1em;
+  background: transparent;
+  text-align: center;
+  border-radius: 1em;
+  cursor: pointer;
+  min-width: 50%;
+  color: #F63;
+}
+.btn-consult-home:hover{
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  background: #ff6633;
+  color: #FFF;
+}
+.img-cst{ width: 60%;}
+.mensagem{ background: #fafafa; text-align: center; padding: 1.875em 0; }
+.mensagem h3, .mensagem p{font-family: "open_sanslight";}
+.servicos{ background: #333; min-height: 980px; padding: 3em 0;}
+.servicos ul{width: 33.3333333%; }
+.servicos h2,.servicos h3, .servicos a{color: #FFF;}
+.servicos h2{text-align: center; padding: 0 0 3em 0; font-family: "open_sanslight";}
+.servicos h3{text-transform: uppercase; font-family: "open_sansbold";}
+.servicos a{ line-height: 1.875em; font-family: "open_sanslight";}
+.servicos p{color: #666; font-family: "open_sanssemibold_italic"; text-align: center;}
+.btn-serv{
+  padding: 0.350em 1em;
+  background: #ff6633;
+  text-align: center;
+  border-radius: 1em;
+  cursor: pointer;
+  color: #FFF;
+  width: 20%;
+}
+.btn-serv:hover{ background: #f3602f;}
+.iconlogo-btn{ position: absolute; background: #ff6633; font: 3.750em "Heydings Common Icons"; color: #FFF; width: 30%; max-width: 75px; margin: -20px 47.9% 0 47.9%; border-radius: 7px;}
+.img-serv{ margin-top: 2.375em;}
+
+.footer{ background: #333;  padding: 2.000em 0 0.500em 0;}
+.widget-footer-geral{ width: 33.333333333333%;}
+.widget-footer-geral h3{ color: #FFF; font-family: "open_sansbold";
+display: block;
+-webkit-margin-before: 1.33em;
+-webkit-margin-after: 1.33em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+border: 
+}
+.widget-footer-geral a{color: #ccc;}
+.widget-footer-geral a:hover{color: #FFF;}
+.copyright{ background: #2e2e2e; padding:1.250em 0;}
+.copyright address{ color: #FFF; font-family: "open_sansregular"; background: #}
+.copyright a{ color: #33cc99; font-family: "open_sansregular"; text-decoration: underline; margin: 01.250em;}
+/*==================================
+=            CSS-Intern            =
+==================================*/
+.intern{background: #FFF;}
+.intern h1{ font-size: 1.750em; font-family: 'open_sansregular'; color: #242424; margin: 1em 0 0 0; line-height: 1em;  }
+
+.categorias{ float: }
+.categorias li{ padding: 7px 15px 7px 15px; margin-top: 0.625em;}
+.categorias li:hover a{color: #FFF;}
+.categorias li:hover{
+  background: #ff6633;
+  border-radius: 7px;
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+}
+.member{ width: 100%; background: #f6f6f6; margin: 50px 0;}
+.imgmember{ max-width: 23%; border: 1px solid #ccc; float: left;}
+.aboutmember{float: left; max-width: 65%; padding: 0% 5%;}
+
+/*-----  End of CSS-Intern  ------*/
+/*======================================
+=            CSS-Individual            =
+======================================*/
+
+/*================================
+=            CSS-Team            =
+================================*/
+.team{text-align: center; }
+.team p{ letter-spacing: 0.500em; line-height: 0.750em;}
+.team h2{ color: #33cc99; font-family: 'open_sansbold'; font-size: 1.750em; margin: 0; padding: 0;}
+.member-team{ width: 21.5701%; float: left; margin: 40px 5.5%; text-align: center; line-height: 0.500em;}
+.member-team:hover{
+  -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  -ms-box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  -o-box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 200ms ease;
+  background: #f9f9f9;
+}
+.member-team p{letter-spacing: normal;}
+.sprite{background: url(imagens/icon-social-team.png) no-repeat;}
+.twitter{ background: url(imagens/icon-social-team.png) 0 0;}
+.facebook{ background: url(imagens/icon-social-team.png) -41px 0;}
+.likedin{ background: url(imagens/icon-social-team.png) -126px 0;}
+.instagran{ background: url(imagens/icon-social-team.png) -85px 0;}
+.skype{ background: url(imagens/icon-social-team.png) -165px 0;}
+/*-----  End of CSS-Team  ------*/
+
+
+/*=====================================
+=            CSS-Vantagens            =
+=====================================*/
+.vantgs{ background: #fcfcfc; text-align: center; min-height: 80px; padding: 30px 0;}
+.vantgs h2{ padding: 0; margin: 0;}
+.vantgs p{ color: #FF6633;}
+.vantagem{ width: 27.45%; float: left; margin: 40px 2.5%; text-align: center; line-height: 0.500em;}
+.vantagem h3{ color: #FF6633; font-family: 'open_sansregular'; font-size: 1.50em; margin: 0; padding: 0;}
+/*-----  End of CSS-Vantagens  ------*/
+
+/*========================================
+=            CSS-Estatisticas            =
+========================================*/
+.estatisticas{
+  background: url(imagens/bg-number.jpg) no-repeat top center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 1.500em 0;
+  min-height: 200px;
+  margin: 40px 0;
+  width: 100%;
+}
+.estatisticas p{color: #fff;}
+.estatisticas ul{width: 70%; margin: 0 auto;}
+.estatisticas li{ float: left; width: 23.33%; margin: 0 5%; text-align: center;}
+.code h3, .coffee h3, .projects h3{ color: #f63; font-size: 2.500em;}
+
+/*-----  End of CSS-Estatisticas  ------*/
+
+/*=======================================
+=            CSS-Progressbar            =
+=======================================*/
+progress {
+color: #FFF;
+-webkit-appearance: progress-bar;
+box-sizing: border-box;
+display: inline-block;
+height: 25px;
+width: 100%;
+vertical-align: -0.2em;
+border-radius: 5px;
+background: #eeeeee;
+margin: -1em 0 1em 0;
+}
+progress[value]::-webkit-progress-bar {
+   background: #eeeeee;
+   border-radius: 5px;
+ }
+.progress-html::-webkit-progress-value{ background: #ffa800; border-radius: 5px; height: 25px; color: #FFF;}
+.progress-css::-webkit-progress-value{ background: #0099ff; border-radius: 5px; height: 25px; color: #FFF;}
+.progress-wp::-webkit-progress-value{ background: #084278; border-radius: 5px; height: 25px; color: #FFF;}
+.progress-design::-webkit-progress-value{ background: #31a9a9; border-radius: 5px; height: 25px; color: #FFF;}
+
+
+/*-----  End of CSS-Progressbar  ------*/
+
+/*=================================
+=            CSS-About            =
+=================================*/
+.text-about, .skills, .depoimentos{ width: 47%;}
+.text-about{ line-height: 1em;}
+.text-about h2{ font-family: 'open_sansregular'; font-size: 2.50em; margin: 0; padding: 0; color: #33cc99;}
+.text-about p{ padding: 10px 0;}
+.btn-about{padding: 3px 12px; margin: 10px 0; border-radius: 5px; border: 1px solid #ff6633; background: #FFF; cursor: pointer;}
+.btn-about:hover{ background: #FF6633; color: #FFF;}
+.skills, .depoimentos{ margin-top: 4.000em;}
+.skills h2, .depoimentos h2{ font-family: "open_sansbold";}
+.depoimentos h3{ color: #33cc99; font-family: "open_sanssemibold_italic"; line-height: 0.500;}
+/*-----  End of CSS-About  ------*/
+
+
+/*=====================================
+=            CSS-Trabalhos            =
+=====================================*/
+.trabalhos{min-height: 300px; background: #f9f9f9; padding: 2em 0; text-align: center;}
+
+.listportfolio li span{
+ display:none;
+}
+.listportfolio li:hover .thumb{display:none;}
+.listportfolio li:hover span{
+  display:block;
+}
+
+.listportfolio li{border: 1px solid #ddd; background: #FFF; color: #FFF; text-align: center; width: 30%;}
+.listportfolio h2{ font-size: 18px;}
+.listportfolio img{ width: 100%; margin: 0 0 -5px 0; padding: 0;}
+.listportfolio img:hover{ background: url(imagens/simagdie.jpg);}
+.listportfolio li:hover{
+  -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  -ms-box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  -o-box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.listportfolio li:hover .hiden{
+    display: block;
+    -webkit-transition: all 5000ms ease;
+  -moz-transition: all 5000ms ease;
+  -ms-transition: all 5000ms ease;
+  -o-transition: all 5000ms ease;
+  transition: all 2000ms ease;
+}
+.hiden{ overflow: hidden; display: none;}
+
+/*-----  End of CSS-Trabalhos  ------*/
+
+
+
+
+/*===================================
+=            CSS-Contato            =
+===================================*/
+.contato-index{ text-align: center;}
+.contato-index h2{ font-weight: bold;}
+.contato-index p{ font-family: "open_sanssemibold_italic"; float: left;}
+.bgcontato{ padding: 40px 0; background: url(imagens/bg-number.jpg) no-repeat fixed top center; margin: 2em 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+.contatoshome{ }
+.enderecohome, .fonehome, .mailhome{ width: 25%; margin: 0 4.1%; color: #FFF; }
+.inputcontato, .textareacontato{ border: 2px solid #888; border-radius: 3px;}
+.inputcontato{ width: 93%; height: 40px; margin: 0 5% 20px 0; padding: 0 2%;}
+.textareacontato{width: 96%; height: 86px; margin: 0 0 15px 0; padding: 2%;}
+.submit{
+  background: rgb(255, 102, 51);
+  border: 2px solid #f63;
+  border-radius: 3px;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+  padding: 0 5%;
+  height: 46px;
+  width: 101%;
+  color: #fff;
+}
+.submit:hover{ background:rgba(255, 102, 51, 0.8);}
+.camposleft{float: left; width: 49%;}
+.camposright{float: left; width: 48%; margin-left: 20px;}
+/*-----  End of CSS-Contato  ------*/
+
+
+/*-----  End of CSS-Individual  ------*/
+
+
+/*==================================
+=            CSS-PRICES            =
+==================================*/
+.box-price{ background: #f6f6f6; min-height: 250px; margin-top: 45px;}
+.list-serv{ width: 70%; margin: 1.7% 3.7%;}
+.list-serv ul{ padding: 0;}
+.list-serv li{ padding: 7px 0;}
+.icon-price{ width: 22%; float: left; text-align: center;}
+.icon-price-design{ background:  #FF6633 url(imagens/icon-design.png) no-repeat center;min-height: 250px;}
+.icon-price-dev{ background: #33cc99 url(imagens/icon-dev.png) no-repeat center;; min-height: 250px;}
+.icon-price-consult{background: #242424 url(imagens/icon-consult.png) no-repeat center;; min-height: 250px;}
+.service-name{ width: 73%; float: left;}
+.price{width: 12%; float: left;}
+.btn-price{border-radius: 5px; padding: 3px 7px; width: 15%;}
+.btn-design{ background: rgba(255, 102, 51, 0.5); color: #FFF; cursor: pointer;}
+li:hover .btn-design, li:hover .btn-dev, li:hover .btn-consult{
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+}
+li:hover .btn-design{ background: rgba(255, 102, 51, 1);}
+.btn-dev{ background: rgba(51, 204, 153, 0.5); color: #FFF; cursor: pointer;}
+li:hover .btn-dev{ background: rgba(51, 204, 153, 1);}
+.btn-consult{ background: rgba(26, 29, 36, 0.5); color: #FFF; cursor: pointer;}
+li:hover .btn-consult{ background: rgba(26, 29, 36, 1);}
+
+/*-----  End of CSS-PRICES  ------*/
+/*=================================
+=            CSS-GOTOP            =
+=================================*/
+a.gotop{
+display:none;
+position:fixed;
+right:5px;
+bottom:5px;
+color:#FFF;
+font-weight:bold;
+text-decoration:none;
+border-radius: 3px;
+background:#222;
+padding:10px;
+}
+/*-----  End of CSS-GOTOP  ------*/
+
+
+
+@media screen and (max-width: 68.500em){
+  .consultoria h2{ color: #242424; margin:0; font: 3.000em "open_sansbold";}
+  .listportfolio li{width: 47%;}
+}
+@media screen and (max-width: 62.500em){
+.consultoria h2{ color: #242424; margin:0; font: 3.000em "open_sansbold";}
+.vantagem{ width: 23%; float: left; margin: 40px 5%; text-align: center; line-height: 0.500em;}
+.vantagem h3{ color: #FF6633; font-family: 'open_sansregular'; font-size: 1.50em; margin: 0; padding: 0;}
+.member-team{ width: 21.5701%; float: left; margin: 40px 5%; text-align: center; line-height: 0.500em;}
+.listportfolio li{width: 46%;}
+/*===================================
+=            CSS-Contato            =
+===================================*/
+.enderecohome, .fonehome, .mailhome{ width: 25%; margin: 0 4.1%;}
+
+.camposleft{float: left; width: 48%;}
+.camposright{float: left; width: 48%; margin-left: 20px;}
+/*-----  End of CSS-Contato  ------*/
+
+}
+@media screen and (max-width: 52.500em){
+.consultoria h2{ color: #242424; margin:0; font: 2.000em "open_sansbold";}
+.consultoria p{font-size: 100%;}
+.text-consul{ width: 100%; clear: both; text-align: center;}
+.img-cst{ width: 100%; height: 100%;}
+
+.vantagem{ width: 23%; float: left; margin: 40px 5%; text-align: center; line-height: 0.500em;}
+.vantagem h3{ color: #FF6633; font-family: 'open_sansregular'; font-size: 1.50em; margin: 0; padding: 0;}
+.member-team{ width: 21.5701%; float: left; margin: 40px 5%; text-align: center; line-height: 0.500em;}
+
+/*===================================
+=            CSS-Contato            =
+===================================*/
+.enderecohome, .fonehome, .mailhome{ width: 33.3333%; margin: 0;}
+.camposleft{float: left; width: 47%;}
+.camposright{float: left; width: 47%; margin-left: 20px;}
+/*-----  End of CSS-Contato  ------*/
+}
+
+@media screen and (max-width: 48.000em){
+.center{max-width: 48em; width: 95%; margin: 0 auto;}
+.pont-logo{font: 1.375em "Vani"; margin:1.250em 0 0 0; color: #ff6633;}
+.header{ background: #333; min-height: 5.000em; padding:1.250em 0;}
+.icon-logo-medium{ font: 3.750em "Heydings Common Icons"; color: #FFF; float: left;}
+.pont-logo-medium{font: 55px "Vani"; margin:1.250em 0 0 0; color: #ff6633;}
+.logo-medium{ font: 3.750em "Rockwell"; color: #FFF; float: left; margin: 0;}
+.consultoria h2{ color: #242424; margin:0; font: 2.000em "open_sansbold";}
+
+.text-consul{ width: 100%; clear: both; text-align: center;}
+.img-cst{ width: 100%; height: 100%;}
+.mensagem{ background: #fafafa; text-align: center; padding: 1.875em 0; }
+.mensagem h3, .mensagem p{font-family: "open_sanslight";}
+.servicos{ min-height: 980px; text-align: center;}
+.servicos ul{width: 100%; text-align: center;}
+.servicos h2,.servicos h3, .servicos a{color: #FFF;}
+.servicos h2{text-align: center; padding: 3.125em 0; font-family: "open_sanslight"; font-size: 200%;}
+.servicos h3{text-transform: uppercase; font-family: "open_sansbold"; }
+.servicos a{ line-height: 1.875em; font-family: "open_sanslight";}
+.servicos p{ clear: both;}
+.estatisticas li{ width: 100%; font-size: 200%;}
+.btn-serv{ margin: 0 auto; width: 80%; clear: both;}
+.footer{ background: #242424;  padding: 5.000em 0 3.125em 0;}
+.vantagem{ width: 100%; clear: both; margin: 40px 0%; text-align: center; line-height: 0.500em;}
+.vantagem h3{ color: #FF6633; font-family: 'open_sansregular'; font-size: 1.50em; margin: 0; padding: 0;}
+.member-team{ width: 100%; clear: both; margin: 40px 1%; text-align: center; line-height: 0.500em;}
+.member-team img{ width: 100%;}
+.text-about, .skills, .depoimentos{ width: 100%;}
+.listportfolio li{width: 45%;}
+/*===================================
+=            CSS-Contato            =
+===================================*/
+.enderecohome, .fonehome, .mailhome{ width: 100%; clear: both; margin: 10px 0;}
+.camposleft{ clear: both; width: 100%;}
+.camposright{ clear: both; width: 97%; margin-left: 0px;}
+/*-----  End of CSS-Contato  ------*/
+
+}
+
+@media screen and (max-width: 30.000em){
+.workhome li{width: 100%; clear: both;}
+.listportfolio li{width: 98%;}
+}
+
+@media screen and (max-width: 20.000em){
+.center{max-width: 20.000em; width: 95%; margin: 0 auto;}
+.pont-logo{font: 1.375em "Vani"; margin:1.250em 0 0 0; color: #ff6633;}
+.header{ background: #333; min-height: 5.000em;}
+.icon-logo-medium{ font: 2.750em "Heydings Common Icons"; color: #FFF; float: left;}
+.pont-logo-medium{font: 40px "Vani"; margin:1.250em 0 0 0; color: #ff6633;}
+.btn-orange a{color: #FFF; text-align: center;  height: 2.688em;}
+.btn-orange{ margin:0 auto; clear: both; font-size: 20px; width: 100%; padding: 0.625em; background: #ff6633; border-radius: 0.313em; border: 1px solid #ff6633; color: #FFF; cursor: pointer; }
+.btn-home{width: 11%; margin: 0 auto;}
+.logo-medium{ font: 2.750em "Rockwell"; color: #FFF; float: left; margin: 0;}
+.floatleft{clear: both;}
+}
